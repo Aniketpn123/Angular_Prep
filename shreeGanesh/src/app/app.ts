@@ -4,10 +4,10 @@ import { RouterOutlet } from '@angular/router';
 import { UserInfo } from './user-info/user-info';
 import { Course } from './models/course';
 import { FacultyDetails } from './faculty-details/faculty-details';
-
+import { EventHandling } from './event-handling/event-handling';
 @Component({
   selector: 'app-root',
-  imports: [CommonModule,UserInfo,FacultyDetails],
+  imports: [CommonModule,UserInfo,FacultyDetails,EventHandling],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -30,4 +30,6 @@ export class App {
     this.courses.push(this.course2);
     this.courses.push(this.course3);
   }
+
+  imgUrl = "img.gif";
 }
