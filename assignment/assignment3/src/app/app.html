@@ -1,0 +1,14 @@
+<div>
+  square of no = <input type="text" [(ngModel)]="no">
+  {{no}}
+{{ no | square }}
+
+<p>decimal point types</p>
+
+<p>{{ no | number }}</p>
+<p>{{ no | number : '1.2-2'}}</p>
+<p>{{ no | number : '1.0-0'}}</p>
+<p>{{ no | number : '1.1-1'}}</p>
+<p>{{ no | percent }}</p>
+</div>
+
