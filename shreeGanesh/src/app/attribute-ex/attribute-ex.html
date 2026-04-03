@@ -1,0 +1,18 @@
+<div [ngClass]="{ highlight: isChanged }">sttribute change</div>
+
+<button (click)="styleChange()">click</button>
+<br />
+<input type="text" [(ngModel)]="name" />
+
+userName : {{ name }}
+<p>
+  original msg = {{ msg }} <br />
+  pipe reverse msg = {{ msg | reverse }} <br />
+
+  birthday date is = " {{ birthDay | date }} " <br />
+  birthday date is = " {{ birthDay | date: 'short' }} " <br />
+  birthday date is = " {{ birthDay | date: 'medium' }} " <br />
+  birthday date is = " {{ birthDay | date: 'long date' }} " <br />
+</p>
+
+{{ name | uppercase }}

@@ -5,9 +5,10 @@ import { UserInfo } from './user-info/user-info';
 import { Course } from './models/course';
 import { FacultyDetails } from './faculty-details/faculty-details';
 import { EventHandling } from './event-handling/event-handling';
+import { AttributeEx } from './attribute-ex/attribute-ex';
 @Component({
   selector: 'app-root',
-  imports: [CommonModule,UserInfo,FacultyDetails,EventHandling],
+  imports: [CommonModule,UserInfo,FacultyDetails,EventHandling,AttributeEx],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

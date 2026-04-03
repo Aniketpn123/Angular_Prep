@@ -1,6 +1,6 @@
 <h1>Course Details</h1>
 
-<img [src] = "imgUrl" class="center-img">
+<img [src]="imgUrl" class="center-img" />
 
 <table border="1" style="margin-left: 50px; padding: 10px">
   <tr>
@@ -19,49 +19,44 @@
     <td>{{ jobAssistance }}</td>
   </tr>
   <tr>
-    <td>{{course1.courseId}}</td>
-    <td>{{course1.courseName}}</td>
+    <td>{{ course1.courseId }}</td>
+    <td>{{ course1.courseName }}</td>
     <!--  interpolation -->
-    <td>{{ course1.startDate | date}}</td>
-    <td>{{course1.courseFees}}</td>
-    <td>{{course1.jobAssistance}}</td>
+    <td>{{ course1.startDate | date }}</td>
+    <td>{{ course1.courseFees }}</td>
+    <td>{{ course1.jobAssistance }}</td>
   </tr>
   <tr>
-    <td>{{course2.courseId}}</td>
-    <td>{{course2.courseName}}</td>
+    <td>{{ course2.courseId }}</td>
+    <td>{{ course2.courseName }}</td>
     <!--  interpolation -->
-    <td>{{ course2.startDate | date}}</td>
-    <td>{{course2.courseFees}}</td>
-    <td>{{course2.jobAssistance}}</td>
+    <td>{{ course2.startDate | date }}</td>
+    <td>{{ course2.courseFees }}</td>
+    <td>{{ course2.jobAssistance }}</td>
   </tr>
   <tr>
-    <td>{{course3.courseId}}</td>
-    <td>{{course3.courseName}}</td>
+    <td>{{ course3.courseId }}</td>
+    <td>{{ course3.courseName }}</td>
     <!--  interpolation -->
-    <td>{{ course3.startDate | date}}</td>
-    <td>{{course3.courseFees}}</td>
-    <td>{{course3.jobAssistance}}</td>
+    <td>{{ course3.startDate | date }}</td>
+    <td>{{ course3.courseFees }}</td>
+    <td>{{ course3.jobAssistance }}</td>
   </tr>
 
-  @for (cObj of courses; track cObj.courseId){
-      <tr>
-        <td>{{cObj.courseId}}</td>
-        <td>{{cObj.courseName}}</td>
-        <td>{{cObj.startDate | date }}</td>
-        <td>{{cObj.courseFees}}</td>
-        <td>{{cObj.jobAssistance}}</td>
-      </tr>
+  @for (cObj of courses; track cObj.courseId) {
+    <tr>
+      <td>{{ cObj.courseId }}</td>
+      <td>{{ cObj.courseName }}</td>
+      <td>{{ cObj.startDate | date }}</td>
+      <td>{{ cObj.courseFees }}</td>
+      <td>{{ cObj.jobAssistance }}</td>
+    </tr>
   }
 </table>
 
-<app-user-info>
-  
-</app-user-info>
+<app-user-info> </app-user-info>
 
-<app-faculty-details>
-  
-</app-faculty-details>
+<app-faculty-details> </app-faculty-details>
 
-<app-event-handling>
-  
-</app-event-handling>
+<app-event-handling> </app-event-handling>
+<app-attribute-ex></app-attribute-ex>
