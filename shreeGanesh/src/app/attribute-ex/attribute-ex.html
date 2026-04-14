@@ -15,4 +15,8 @@ userName : {{ name }}
   birthday date is = " {{ birthDay | date: 'long date' }} " <br />
 </p>
 
-{{ name | uppercase }}
+{{ name | uppercase }} <br />
+{{ 10000 | currency}}<br />
+{{ 10000 | currency :'INR' : 'symbol'}}<br />
+{{ 10000 | currency :'EUR' : 'symbol'}}<br />
+{{person | json}}

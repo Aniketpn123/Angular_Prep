@@ -6,9 +6,11 @@ import { Course } from './models/course';
 import { FacultyDetails } from './faculty-details/faculty-details';
 import { EventHandling } from './event-handling/event-handling';
 import { AttributeEx } from './attribute-ex/attribute-ex';
+import { Parent } from './parent/parent';
+
 @Component({
   selector: 'app-root',
-  imports: [CommonModule,UserInfo,FacultyDetails,EventHandling,AttributeEx],
+  imports: [CommonModule,UserInfo,FacultyDetails,EventHandling,AttributeEx,Parent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

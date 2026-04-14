@@ -1,0 +1,11 @@
+<p>parent componnet</p>
+   <p>paretnMsg {{parentMsg}}</p>
+   <table>
+   @for (item of itemList ; track $index){
+      <tr>
+         <td>{{item}}</td>
+      </tr>
+   }
+   </table>
+   
+<app-child [recieveMsg] ="parentMsg" (itemEvent)="addNewItem($event)"></app-child>
