@@ -1,0 +1,17 @@
+<p>product-list works!</p>
+<p>service demo</p>
+<table border="1">
+    @for(product of productArr ; track $index){
+        <tr>
+            <td>{{product}}</td>
+        </tr>
+    }
+</table>
+
+<br />
+
+<h1>add product</h1>
+<input type="text" [(ngModel)]="productName" />
+
+<button (click)="addNewProduct( )">Add Product</button>
+

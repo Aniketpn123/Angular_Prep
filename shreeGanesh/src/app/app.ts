@@ -7,10 +7,11 @@ import { FacultyDetails } from './faculty-details/faculty-details';
 import { EventHandling } from './event-handling/event-handling';
 import { AttributeEx } from './attribute-ex/attribute-ex';
 import { Parent } from './parent/parent';
+import { ProductList } from './product-list/product-list';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule,UserInfo,FacultyDetails,EventHandling,AttributeEx,Parent],
+  imports: [CommonModule,UserInfo,FacultyDetails,EventHandling,AttributeEx,Parent,ProductList],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
