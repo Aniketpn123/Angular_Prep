@@ -1,0 +1,50 @@
+<h1>
+    two way binding
+</h1>
+
+<input [(ngModel)]="username">
+<p>
+    {{username}}
+</p>
+
+<textarea [(ngModel)]="username"></textarea>
+
+<p>{{username}}</p>
+
+<select [(ngModel)]="username">
+    <option>India</option>
+    <option>USA</option>
+    <option>japan</option>
+</select>
+
+<p>{{username}}</p>
+
+<input type="checkbox" [(ngModel)]="isChecked">
+<p>{{isChecked}}</p>
+
+<input type="radio" value="Male" [(ngModel)]="gender" name="g"> Male
+
+<input type="radio" value="Female" [(ngModel)]="gender" name="g"> Female
+
+<p>{{gender}}</p>
+
+
+<input type="email" [(ngModel)]="user.email" name="email">
+
+<input type="password" [(ngModel)]="user.pass" name="pass">
+
+<p>{{user.email}}</p>
+<p>{{user.pass}}</p>
+
+
+<input [(ngModel)]="searchText">
+
+<p>search text = {{searchText}}</p>
+
+<textarea [(ngModel)]="msg"></textarea>
+
+<p>{{msg.length}}</p>
+
+<input [(ngModel)]="username">
+
+<p [style.color]="username.length < 3 ? 'red' : 'green'">{{username}}</p>
