@@ -1,0 +1,22 @@
+<h1>class binding</h1>
+
+<div [class.active]="isActive">angular (class vinding is uesed to add or removve css)</div>
+<p [class]="classNames">framework</p>
+
+<div
+  [ngClass]="{
+    active: true,
+    error: false,
+  }"
+>
+  designed by google
+</div>
+
+<div [ngClass]="['box', 'active']">card array style in ngClass</div>
+<div class="box active">card  with class only</div>
+
+<li [class.active]="selected === 'home'">home</li>
+<li [class.active]="selected === 'about'">about</li>
+
+<input type="text"  [class.invalid]="name === ''" />
+
